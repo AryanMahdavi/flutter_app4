@@ -63,7 +63,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                     ),
                     //, // leading will be at the left side in difference with title(often in the middle of the page).
                     title: new Row(
-                      children: <Widget>[
+                      children: <Widget>[ //hej
                         Expanded(
                           // ========KOM IHÅG ATT BYTA UT VALUTAN FRÅN DOLLAR TILL SVENSKA KRONOR======
                           child: new Text(
