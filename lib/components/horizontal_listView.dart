@@ -5,43 +5,44 @@ class HorizontalList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         height: 100.0,
+        // CATEGORI BILDER BÖRJAR HÄR. BILDERNA ÄR LAGT HORIZONTELL
         child: ListView(
           scrollDirection: Axis.horizontal,
           children: <Widget>[
             Category(
               image_location: 'images/cats/dress.png',
-              image_caption: 'Dress',
+              image_caption: 'Women',
             ),
 
             Category(
               image_location: 'images/cats/tshirt.png',
-              image_caption: 'T_shirt',
+              image_caption: 'Kids',
             ),
 
-            Category(
-              image_location: 'images/cats/accessories.png',
-              image_caption: 'Accessories',
-            ),
+          //  Category(
+             // image_location: 'images/cats/accessories.png',
+             // image_caption: 'Accessories',
+            //),
 
             Category(
               image_location: 'images/cats/formal.png',
-              image_caption: 'Formal',
+              image_caption: 'Men',
             ),
 
-            Category(
-              image_location: 'images/cats/informal.png',
-              image_caption: 'Informal',
-            ),
+           // Category(
+             // image_location: 'images/cats/informal.png',
+             // image_caption: 'Informal',
+          //  ),
 
-            Category(
-              image_location: 'images/cats/jeans.png',
-              image_caption: 'Jeans',
-            ),
+           // Category(
+           //   image_location: 'images/cats/jeans.png',
+              //image_caption: 'Jeans',
+            //),
 
-            Category(
-              image_location: 'images/cats/shoe.png',
-              image_caption: 'Shoes',
-            ),
+           // Category(
+             // image_location: 'images/cats/shoe.png',
+           //   image_caption: 'Shoes',
+           // ),
           ],
         )
     );
@@ -67,14 +68,14 @@ class Category extends StatelessWidget {
       child: InkWell(onTap: () {},
         child: Container(
           width: 100.0,
-        child: ListTile(
-        title: Image.asset(image_location,
+          child: ListTile(
+           title: Image.asset(image_location,
         width: 100.0,
         height: 80.0,
       ),
-      subtitle: Container( //för att centrera text
+            subtitle: Container( //för att centrera text
         alignment: Alignment.topCenter,
-        child: Text(image_caption),
+             child: Text(image_caption),
       )
     ),
     ),
